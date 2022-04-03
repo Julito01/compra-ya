@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="flexbox.css" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cube">...</div>
+    <main id="main-container" class="main-container">
+      <nav class="main-nav">
+        <section class="bar-nav">
+          <h1 id="principal" class="title-nav">CompraYa</h1>
+          <div class="option">Inicio</div>
+          <div class="dropdown-option">
+            Categorias
+            <div class="dropdown-categorias">
+              <a class="dropdown-toggle" href="#">Sillas gamer</a>
+              <a class="dropdown-toggle" href="#">Teclados gamer</a>
+              <a class="dropdown-toggle" href="#">Auriculares gamer</a>
+              <a class="dropdown-toggle" href="#">Microfonos</a>
+              <a class="dropdown-toggle" href="#">Bicicletas</a>
+              <a class="dropdown-toggle" href="#">Consolas</a>
+            </div>
+          </div>
+          <div class="option">Contactenos</div>
+          <div class="button">
+            <input
+              type="text"
+              name="search"
+              id="button-search"
+              placeholder="Buscar.."
+            />
+          </div>
+          <div onclick="redirectLogin()" id="login" class="login">Login</div>
+          <div class="register">Registrarse</div>
+        </section>
+      </nav>
+      <section id="product-container" class="product-container">
+        <h1 class="title">Productos</h1>
+        <span id="result" class="products-counter"></span>
+        <section class="container">
+          <div class="product">
+            <img
+              class="image"
+              src="https://labicikleta.com/wp-content/uploads/2016/07/FeatureBiciMontana-770x513.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">Bicicleta</h4>
+              <p class="price">$50,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://phantom-elmundo.unidadeditorial.es/c7d1b8fad42cba84e72d4e1e5e11416c/resize/746/f/jpg/assets/multimedia/imagenes/2020/06/11/15919100847394.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">Consola PlayStation 5</h4>
+              <p class="price">$100,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://www.venex.com.ar/products_images/1544211692_meme1.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX Alloy FPS Pro</h4>
+              <p class="price">$15,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://media.kingston.com/hyperx/product/hx-product-headset-cloud-flight-s-2-zm-lg.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX Cloud Flight S</h4>
+              <p class="price">$20,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://media.kingston.com/hyperx/product/hx-product-mic-quadcast-1-zm-lg.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX QuadCast</h4>
+              <p class="price">$15,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://www.casanissei.com/media/catalog/product/cache/16a9529cefd63504739dab4fc3414065/r/x/rxracer_r01-rn_-_rojo.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">DXRacer Racing Series</h4>
+              <p class="price">$80,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://labicikleta.com/wp-content/uploads/2016/07/FeatureBiciMontana-770x513.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">Bicicleta</h4>
+              <p class="price">$50,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://phantom-elmundo.unidadeditorial.es/c7d1b8fad42cba84e72d4e1e5e11416c/resize/746/f/jpg/assets/multimedia/imagenes/2020/06/11/15919100847394.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">Consola PlayStation 5</h4>
+              <p class="price">$100,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://www.venex.com.ar/products_images/1544211692_meme1.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX Alloy FPS Pro</h4>
+              <p class="price">$15,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://media.kingston.com/hyperx/product/hx-product-headset-cloud-flight-s-2-zm-lg.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX Cloud Flight S</h4>
+              <p class="price">$20,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://media.kingston.com/hyperx/product/hx-product-mic-quadcast-1-zm-lg.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX QuadCast</h4>
+              <p class="price">$15,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://www.casanissei.com/media/catalog/product/cache/16a9529cefd63504739dab4fc3414065/r/x/rxracer_r01-rn_-_rojo.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">DXRacer Racing Series</h4>
+              <p class="price">$80,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://labicikleta.com/wp-content/uploads/2016/07/FeatureBiciMontana-770x513.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">Bicicleta</h4>
+              <p class="price">$50,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://phantom-elmundo.unidadeditorial.es/c7d1b8fad42cba84e72d4e1e5e11416c/resize/746/f/jpg/assets/multimedia/imagenes/2020/06/11/15919100847394.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">Consola PlayStation 5</h4>
+              <p class="price">$100,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://www.venex.com.ar/products_images/1544211692_meme1.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX Alloy FPS Pro</h4>
+              <p class="price">$15,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://media.kingston.com/hyperx/product/hx-product-headset-cloud-flight-s-2-zm-lg.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX Cloud Flight S</h4>
+              <p class="price">$20,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://media.kingston.com/hyperx/product/hx-product-mic-quadcast-1-zm-lg.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX QuadCast</h4>
+              <p class="price">$15,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://www.casanissei.com/media/catalog/product/cache/16a9529cefd63504739dab4fc3414065/r/x/rxracer_r01-rn_-_rojo.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">DXRacer Racing Series</h4>
+              <p class="price">$80,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://labicikleta.com/wp-content/uploads/2016/07/FeatureBiciMontana-770x513.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">Bicicleta</h4>
+              <p class="price">$50,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://phantom-elmundo.unidadeditorial.es/c7d1b8fad42cba84e72d4e1e5e11416c/resize/746/f/jpg/assets/multimedia/imagenes/2020/06/11/15919100847394.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">Consola PlayStation 5</h4>
+              <p class="price">$100,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://www.venex.com.ar/products_images/1544211692_meme1.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX Alloy FPS Pro</h4>
+              <p class="price">$15,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://media.kingston.com/hyperx/product/hx-product-headset-cloud-flight-s-2-zm-lg.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX Cloud Flight S</h4>
+              <p class="price">$20,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://media.kingston.com/hyperx/product/hx-product-mic-quadcast-1-zm-lg.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX QuadCast</h4>
+              <p class="price">$15,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://www.casanissei.com/media/catalog/product/cache/16a9529cefd63504739dab4fc3414065/r/x/rxracer_r01-rn_-_rojo.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">DXRacer Racing Series</h4>
+              <p class="price">$80,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://labicikleta.com/wp-content/uploads/2016/07/FeatureBiciMontana-770x513.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">Bicicleta</h4>
+              <p class="price">$50,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://phantom-elmundo.unidadeditorial.es/c7d1b8fad42cba84e72d4e1e5e11416c/resize/746/f/jpg/assets/multimedia/imagenes/2020/06/11/15919100847394.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">Consola PlayStation 5</h4>
+              <p class="price">$100,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://www.venex.com.ar/products_images/1544211692_meme1.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX Alloy FPS Pro</h4>
+              <p class="price">$15,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://media.kingston.com/hyperx/product/hx-product-headset-cloud-flight-s-2-zm-lg.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX Cloud Flight S</h4>
+              <p class="price">$20,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://media.kingston.com/hyperx/product/hx-product-mic-quadcast-1-zm-lg.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX QuadCast</h4>
+              <p class="price">$15,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://www.casanissei.com/media/catalog/product/cache/16a9529cefd63504739dab4fc3414065/r/x/rxracer_r01-rn_-_rojo.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">DXRacer Racing Series</h4>
+              <p class="price">$80,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://labicikleta.com/wp-content/uploads/2016/07/FeatureBiciMontana-770x513.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">Bicicleta</h4>
+              <p class="price">$50,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://phantom-elmundo.unidadeditorial.es/c7d1b8fad42cba84e72d4e1e5e11416c/resize/746/f/jpg/assets/multimedia/imagenes/2020/06/11/15919100847394.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">Consola PlayStation 5</h4>
+              <p class="price">$100,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://www.venex.com.ar/products_images/1544211692_meme1.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX Alloy FPS Pro</h4>
+              <p class="price">$15,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://media.kingston.com/hyperx/product/hx-product-headset-cloud-flight-s-2-zm-lg.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX Cloud Flight S</h4>
+              <p class="price">$20,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://media.kingston.com/hyperx/product/hx-product-mic-quadcast-1-zm-lg.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">HyperX QuadCast</h4>
+              <p class="price">$15,000</p>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="image"
+              src="https://www.casanissei.com/media/catalog/product/cache/16a9529cefd63504739dab4fc3414065/r/x/rxracer_r01-rn_-_rojo.jpg"
+            />
+            <div class="buy-more">
+              <button class="buy">Comprar</button>
+              <button class="view-more">Ver mas</button>
+            </div>
+            <div class="title-price">
+              <h4 class="name">DXRacer Racing Series</h4>
+              <p class="price">$80,000</p>
+            </div>
+          </div>
+          <script src="script.js"></script>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
